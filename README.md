@@ -1,5 +1,7 @@
 #Reddit Client - Codecademy
+
 Project Description
+
 Reddit is a social platform where users share and discuss various types of content. This project uses the Reddit API to fetch and display posts, comments, and subreddit information in a user-friendly interface.
 
 --------------------------------------------------------------------------------------------
