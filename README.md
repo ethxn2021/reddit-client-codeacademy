@@ -51,3 +51,6 @@ npm start
 Once the development server starts, open your browser and navigate to:
 
 http://localhost:3000
+
+![image](https://github.com/user-attachments/assets/5640ff95-fe6e-48c0-a4ac-5d127a4301f3)
+
