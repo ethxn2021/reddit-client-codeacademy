@@ -1,0 +1,15 @@
+.avatar-profile-image {
+  border-radius: 50%; /* Keeps the circular profile image */
+  height: 40px; /* Slightly larger for better visibility */
+  width: 40px; /* Ensures it's a perfect circle */
+  margin-right: var(--spacing-2); /* Increased spacing for better layout */
+  border: 2px solid var(--color-accent); /* Add a colorful border for distinction */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+}
+
+.avatar-profile-image:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  cursor: pointer; /* Indicates interactivity */
+}

@@ -1,0 +1,62 @@
+.subreddit-card {
+  padding-right: var(--spacing-3); /* Slightly larger padding for spacing */
+  background: var(--color-foreground); /* Dark container background */
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.subreddit-card h2 {
+  margin-top: 0;
+  color: var(--color-text-header); /* Bright header color */
+  font-size: 1.2rem; /* Slightly larger for emphasis */
+  font-weight: bold;
+}
+
+.subreddit-card button {
+  background: var(--color-foreground-light); /* Slightly lighter background */
+  border: none;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-secondary); /* Subtle text color */
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  padding: var(--spacing-2);
+  border-radius: var(--radius);
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover and click animations */
+}
+
+.selected-subreddit button {
+  color: var(--color-branding) !important; /* Highlight selected subreddit */
+  font-weight: bold; /* Make it stand out */
+}
+
+.selected-subreddit {
+  border-left: 5px solid var(--color-branding); /* Vibrant border for selected */
+  background: rgba(74, 144, 226, 0.1); /* Transparent branding color */
+  padding-left: calc(var(--spacing-2) - 5px); /* Align content after border */
+}
+
+.subreddit-card button:hover {
+  background: var(--color-on-hover); /* Darker hover background */
+  transform: scale(1.02); /* Subtle hover effect */
+}
+
+.subreddits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Reset default margin */
+}
+
+.subreddit-icon {
+  height: 30px; /* Slightly larger for visibility */
+  width: 30px;
+  border-radius: 50%;
+  margin-right: var(--spacing-2); /* More space between icon and text */
+  background: var(--color-branding); /* Placeholder color for icons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White for icon content */
+  font-size: 1rem;
+}

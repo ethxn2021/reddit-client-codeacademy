@@ -1,0 +1,76 @@
+header {
+  color: var(--color-branding);
+  background: linear-gradient(
+    90deg,
+    var(--color-foreground-light),
+    var(--color-foreground-dark)
+  ); /* Subtle gradient */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Refined shadow for a modern look */
+  height: 72px; /* Slightly taller for a spacious design */
+  padding: 0 var(--spacing-6); /* More horizontal padding for balance */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute content evenly */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bottom border */
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.5rem; /* Larger font for better visibility */
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2); /* Adjust spacing between icon and text */
+}
+
+header .logo-icon {
+  font-size: 2rem;
+  color: var(--color-accent); /* Accent color for the icon */
+}
+
+header span {
+  color: var(--color-text-primary); /* More prominent color for the text */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background: var(--color-background-secondary);
+  padding: var(--spacing-1);
+  border-radius: var(--radius); /* Rounded search bar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
+}
+
+.search input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  padding: var(--spacing-1) var(--spacing-2);
+  height: 40px; /* Consistent height */
+  border-radius: var(--radius);
+  color: var(--color-text-primary);
+  outline: none; /* Remove default focus styles */
+}
+
+.search input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.search input:focus {
+  box-shadow: 0 0 0 2px var(--color-accent); /* Highlight on focus */
+}
+
+.search button {
+  background: var(--color-accent);
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-header);
+  font-size: 1.5rem;
+  border-radius: var(--radius);
+  padding: 0 var(--spacing-2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search button:hover {
+  background: var(--color-accent-dark);
+  transform: scale(1.1); /* Slight zoom on hover */
+}

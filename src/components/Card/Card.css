@@ -1,0 +1,26 @@
+.card {
+  background: linear-gradient(
+    135deg,
+    var(--color-foreground-light),
+    var(--color-foreground-dark)
+  );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  margin-bottom: var(--spacing-4);
+  border-radius: 12px; /* Slightly larger corner radius */
+  padding: var(--spacing-4); /* More spacious padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--color-text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for a modern feel */
+  overflow: hidden; /* Ensures content doesn't overflow the card */
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02); /* Lift and scale effect */
+  cursor: pointer;
+}
+
+.card:focus {
+  box-shadow: 0 0 0 3px var(--color-accent); /* Highlight for accessibility */
+  outline: none; /* Remove default focus outline */
+}

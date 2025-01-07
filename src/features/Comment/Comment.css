@@ -1,0 +1,38 @@
+.comment {
+  background: linear-gradient(
+    135deg,
+    var(--color-background-light),
+    var(--color-background-dark)
+  ); /* Subtle gradient */
+  margin: var(--spacing-2) 0; /* Increased vertical spacing for better separation */
+  padding: var(--spacing-3); /* Slightly more padding for comfort */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smoother animations */
+  border-radius: 12px; /* Slightly larger radius for a modern look */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Light border for definition */
+}
+
+.comment:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+  transform: translateY(-2px); /* Slight lift on hover */
+  cursor: pointer;
+}
+
+.comment-metadata {
+  display: flex;
+  margin-bottom: var(--spacing-3); /* Increased spacing for readability */
+  align-items: center;
+  font-size: 0.9rem; /* Slightly smaller text for metadata */
+  color: var(--color-text-secondary);
+}
+
+.comment-created-time {
+  margin-left: auto;
+  font-style: italic;
+  font-size: 0.85rem; /* Subtle and non-intrusive */
+}
+
+.comment-author {
+  font-weight: bold;
+  color: var(--color-accent); /* Brighter color to emphasize the author */
+  font-size: 1rem; /* Slightly larger for better visibility */
+}
